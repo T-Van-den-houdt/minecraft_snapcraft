@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+}
+
+div.container {
+    max-width: 100%;
+    width: 1000px;
+}
+
+div#games article {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+div#games article ul {
+    margin: 0;
+}
+
+div#games article img {
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+.description {
+    flex-grow: 5;
+}
+
+@media screen and (min-width: 600px) {
+    div#games {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+}
+
+@media screen and (min-width: 800px) {
+    div#games {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+    display: block;
+}
+
+.filters {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.filters p {
+    width: 400px;
+    max-width: 100%;
+}
+
+h1,
+div {
+    margin: 30px 0
+}
+
+input[type="checkbox"] {
+    margin: 0;
+    margin-right: 5px;
+    padding: 0;
+}
